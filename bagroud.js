@@ -50,7 +50,6 @@ chrome.action.onClicked.addListener(async (tab) => {
     });
 
   } catch (err) {
-    // fallback: try showing error toast
     try {
       await chrome.scripting.executeScript({
         target: { tabId: tab.id },
